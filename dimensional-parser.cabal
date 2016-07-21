@@ -1,0 +1,40 @@
+name:          dimensional-parser
+version:       0.0.0
+homepage:      https://github.com/LumiGuide/dimensional-parser
+license:       BSD3
+license-file:  LICENSE
+author:        Roel van Dijk <roel@lambdacube.nl>
+maintainer:    Roel van Dijk <roel@lambdacube.nl>
+build-type:    Simple
+cabal-version: >=1.10
+
+library
+    ghc-options: -Wall
+    hs-source-dirs: src
+    exposed-modules:
+        Numeric.Units.Dimensional.Parser
+    build-depends:
+        base        >= 4.5
+      , containers
+      , dimensional >= 1.0.1.0
+      , exact-pi    >= 0.4.1.0
+      , parsec      >= 3.1.9
+      , scientific
+    extensions:
+        BangPatterns
+        DataKinds
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveTraversable
+        FlexibleContexts
+        FlexibleInstances
+        InstanceSigs
+        LambdaCase
+        NamedFieldPuns
+        OverloadedStrings
+        PackageImports
+        RecordWildCards
+        ScopedTypeVariables
+        TupleSections
+    default-language: Haskell2010
